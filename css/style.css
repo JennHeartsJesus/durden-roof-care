@@ -44,7 +44,7 @@ a:hover{color:var(--accent-2)}
 .main-nav a{color:var(--text);font-weight:600;font-size:.95rem}
 .main-nav a:hover{color:var(--accent)}
 
-.hero{position:relative;min-height:82vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(180deg,rgba(10,12,15,.55) 0%,rgba(10,12,15,.82) 100%),url('https://images.unsplash.com/photo-1632935189003-01f0fbbb8e8f?auto=format&fit=crop&w=1920&q=70'),linear-gradient(135deg,#1a1f26,#0a0c0f);background-size:cover;background-position:center;background-repeat:no-repeat}
+.hero{position:relative;min-height:82vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(180deg,rgba(10,12,15,.55) 0%,rgba(10,12,15,.82) 100%),url('https://images.unsplash.com/photo-1632759145355-73e80f8e0d1e?auto=format&fit=crop&w=1920&q=70'),linear-gradient(135deg,#1a1f26,#0a0c0f);background-size:cover;background-position:center;background-repeat:no-repeat}
 .hero-content{padding:90px 24px 110px;display:flex;flex-direction:column;align-items:center}
 .hero h1{color:#fff;margin-bottom:.3em}
 .hero .accent{color:var(--accent)}
