@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="520" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" width="680" height="200">
   <defs>
     <style>
       .roof-line{fill:none;stroke:#1a3a8c;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
-      .company-d{font-family:'Times New Roman',Georgia,serif;font-weight:700;font-size:72px;fill:#b40000}
-      .company-rest{font-family:'Times New Roman',Georgia,serif;font-weight:700;font-size:52px;fill:#b40000}
-      .tagline{font-family:'Arial',Helvetica,sans-serif;font-weight:400;font-size:22px;letter-spacing:4px}
+      .company-name{font-family:'Times New Roman',Georgia,serif;font-weight:700;font-size:58px;fill:#b40000}
+      .company-cap{font-family:'Times New Roman',Georgia,serif;font-weight:700;font-size:70px;fill:#b40000}
+      .tagline{font-family:'Arial',Helvetica,sans-serif;font-weight:400;font-size:20px;letter-spacing:3px}
       .tag-com{fill:#b40000}
       .tag-sep{fill:#666}
       .tag-ind{fill:#1a3a8c}
@@ -12,18 +12,18 @@
     </style>
   </defs>
   <!-- Three angled roof lines -->
-  <line class="roof-line" x1="30" y1="95" x2="155" y2="10"/>
-  <line class="roof-line" x1="155" y1="10" x2="280" y2="95"/>
-  <line class="roof-line" x1="45" y1="95" x2="165" y2="18"/>
-  <line class="roof-line" x1="165" y1="18" x2="285" y2="95"/>
-  <line class="roof-line" x1="60" y1="95" x2="175" y2="26"/>
-  <line class="roof-line" x1="175" y1="26" x2="290" y2="95"/>
-  <!-- Company name -->
-  <text x="40" y="130"><tspan class="company-d">D</tspan><tspan class="company-rest" dy="0">URDEN </tspan><tspan class="company-d">R</tspan><tspan class="company-rest">OOF </tspan><tspan class="company-d">C</tspan><tspan class="company-rest">ARE</tspan></text>
+  <line class="roof-line" x1="40" y1="90" x2="180" y2="8"/>
+  <line class="roof-line" x1="180" y1="8" x2="320" y2="90"/>
+  <line class="roof-line" x1="55" y1="90" x2="190" y2="14"/>
+  <line class="roof-line" x1="190" y1="14" x2="325" y2="90"/>
+  <line class="roof-line" x1="70" y1="90" x2="200" y2="20"/>
+  <line class="roof-line" x1="200" y1="20" x2="330" y2="90"/>
+  <!-- Company name - DURDEN ROOF CARE -->
+  <text x="30" y="128"><tspan class="company-cap">D</tspan><tspan class="company-name">URDEN</tspan><tspan dx="12" class="company-cap">R</tspan><tspan class="company-name">OOF</tspan><tspan dx="12" class="company-cap">C</tspan><tspan class="company-name">ARE</tspan></text>
   <!-- Blue horizontal line -->
-  <line x1="30" y1="142" x2="490" y2="142" stroke="#1a3a8c" stroke-width="2"/>
+  <line x1="30" y1="140" x2="650" y2="140" stroke="#1a3a8c" stroke-width="2"/>
   <!-- Tagline -->
-  <text x="260" y="172" text-anchor="middle">
+  <text x="340" y="170" text-anchor="middle">
     <tspan class="tagline tag-com">Commercial</tspan>
     <tspan class="tagline tag-sep">  |  </tspan>
     <tspan class="tagline tag-ind">Industrial</tspan>
