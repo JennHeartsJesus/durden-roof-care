@@ -157,3 +157,13 @@ p{margin:0 0 1em}
 /* Responsive nav */
 @media(max-width:900px){.main-nav{gap:10px;font-size:.82rem}.btn-phone{display:none}.logo-img{height:36px}}
 @media(max-width:600px){.main-nav{display:none}.nav{padding:8px 16px}}
+
+.nav > a:first-child{order:3;margin-left:auto}
+.main-nav{order:1}
+.nav-right{order:2}
+/* Hero lead text - match phone number size */
+.hero .lead{font-size:.8rem}
+/* Footer logo right alignment */
+.foot{grid-template-columns:1fr 1fr 1fr auto}
+.foot > div:last-child{grid-column:auto}
+.foot .footer-logo-wrap{order:4;text-align:right}
