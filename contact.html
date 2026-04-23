@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contact - Durden Roof Care | Free Roofing Quote Mississippi</title>
 <meta name="description" content="Contact Durden Roof Care for a free roofing quote. Call (228) 229-4704 or email durdenroofcare@gmail.com. Serving all of Mississippi.">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
@@ -17,22 +20,23 @@
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html" class="active">Contact</a>
-      <a href="contact.html" class="btn btn-primary btn-sm">Free Quote</a>
     </nav>
+    <a href="tel:+12282294704" class="btn btn-phone">☎ (228) 229-4704</a>
   </div>
 </header>
 
 <section class="page-hero">
   <div class="container center">
+    <span class="badge">Get In Touch</span>
     <h1>Contact Durden Roof Care</h1>
-    <p>Fast, friendly service across Mississippi. Let's protect what matters most.</p>
+    <p class="lead">Fast, friendly service across Mississippi. Let's protect what matters most.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container contact-grid">
     <div>
-      <h2>Get In Touch</h2>
+      <h2>We'd Love To Hear From You</h2>
       <p>Whether you need a minor repair, a full roof replacement, or emergency storm response, we're here to help. Call, email, or send us a message and we'll get back to you quickly.</p>
       <ul class="contact-list">
         <li><strong>Phone:</strong> <a href="tel:+12282294704">(228) 229-4704</a></li>
@@ -41,12 +45,10 @@
         <li><strong>Hours:</strong> Mon-Sat 7:00am - 7:00pm</li>
         <li><strong>Service Area:</strong> All of Mississippi</li>
       </ul>
-      <p><strong>Licensed &amp; Insured</strong> - Free estimates - Insurance claims welcome</p>
+      <p><strong style="color:#fff">Licensed &amp; Insured</strong> — Free estimates — Insurance claims welcome.</p>
     </div>
     <div>
-      <form class="quote-form" action="https://formsubmit.co/durdenroofcare@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New Quote Request - DurdenRoofCare.com">
-        <input type="hidden" name="_captcha" value="false">
+      <form id="quote-form" class="quote-form">
         <label>Name<input type="text" name="name" required></label>
         <label>Phone<input type="tel" name="phone" required></label>
         <label>Email<input type="email" name="email" required></label>
@@ -64,6 +66,7 @@
         </label>
         <label>Message<textarea name="message" rows="5"></textarea></label>
         <button type="submit" class="btn btn-primary btn-large">Request Free Quote</button>
+        <div class="form-status" id="form-status"></div>
       </form>
     </div>
   </div>
@@ -78,5 +81,33 @@
   <div class="copy">&copy; <span id="year"></span> Durden Roof Care LLC. All rights reserved.</div>
 </footer>
 <script src="js/main.js"></script>
+<script>
+(function(){
+  var f=document.getElementById('quote-form');
+  var s=document.getElementById('form-status');
+  if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    s.textContent='Sending...';s.style.color='#c9a34e';
+    var fd=new FormData(f);
+    var body={};fd.forEach(function(v,k){body[k]=v});
+    body._subject='New Quote Request - DurdenRoofCare.com';
+    body._template='table';
+    body._captcha='false';
+    fetch('https://formsubmit.co/ajax/durdenroofcare@gmail.com',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json()}).then(function(d){
+      s.textContent='Thank you! Your quote request has been received. We will reach out shortly.';
+      s.style.color='#7ee08a';
+      f.reset();
+    }).catch(function(){
+      s.innerHTML='Could not send. Please call <a href="tel:+12282294704" style="color:#c8102e">(228) 229-4704</a> or email <a href="mailto:durdenroofcare@gmail.com" style="color:#c8102e">durdenroofcare@gmail.com</a>.';
+      s.style.color='#ff8080';
+    });
+  });
+})();
+</script>
 </body>
 </html>
