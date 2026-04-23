@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gallery — Durden Roof Care</title>
+<meta name="description" content="Browse recent roofing projects completed by Durden Roof Care across Mississippi."/>
+<link rel="stylesheet" href="css/style.css?v=4"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+@media(max-width:900px){.gallery-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.gallery-grid{grid-template-columns:1fr}}
+.gallery-item{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#1f252c;border:1px solid rgba(255,255,255,.06)}
+.gallery-item .placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#6b7380;font-family:'Playfair Display',serif;font-size:1.1rem;text-align:center;padding:20px;background:linear-gradient(135deg,#1a1f26,#0a0c0f)}
+.gallery-item .caption{position:absolute;bottom:0;left:0;right:0;padding:16px;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);color:#fff;font-weight:600}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo"><span class="logo-mark">▲</span> Durden Roof Care</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </nav>
+    <a href="tel:2282294704" class="btn btn-phone">☎ (228) 229-4704</a>
+    <a href="contact.html" class="btn btn-primary">Free Quote</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Our Work</span>
+    <h1>Recent Projects</h1>
+    <p class="lead">A snapshot of roofing projects completed across Mississippi.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="center" style="color:#a9b2bd;max-width:720px;margin:0 auto">Photos coming soon — we'll add real project photos from Durden Roof Care jobs across the Gulf Coast. Tap any card below for a project type we specialize in.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item"><div class="placeholder">Residential Shingle Replacement — Biloxi, MS</div><div class="caption">Residential Replacement</div></div>
+      <div class="gallery-item"><div class="placeholder">Storm Damage Restoration — Gulfport, MS</div><div class="caption">Storm Restoration</div></div>
+      <div class="gallery-item"><div class="placeholder">Commercial TPO Re-Roof — Ocean Springs, MS</div><div class="caption">Commercial TPO</div></div>
+      <div class="gallery-item"><div class="placeholder">Metal Roof Install — Hattiesburg, MS</div><div class="caption">Metal Roofing</div></div>
+      <div class="gallery-item"><div class="placeholder">Leak Repair & Flashing — Pascagoula, MS</div><div class="caption">Repairs</div></div>
+      <div class="gallery-item"><div class="placeholder">Gutter Installation — Diamondhead, MS</div><div class="caption">Gutters</div></div>
+      <div class="gallery-item"><div class="placeholder">Church Roof Replacement — Jackson, MS</div><div class="caption">Commercial/Church</div></div>
+      <div class="gallery-item"><div class="placeholder">Hurricane Response Tarping — Long Beach, MS</div><div class="caption">Emergency Response</div></div>
+      <div class="gallery-item"><div class="placeholder">Insurance Claim Job — Bay St. Louis, MS</div><div class="caption">Insurance Claims</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact">
+  <div class="container center">
+    <h2>Want to Be Our Next Project?</h2>
+    <p>Call (228) 229-4704 or request a free quote online.</p>
+    <a href="contact.html" class="btn btn-primary btn-large">Get a Free Quote</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container foot">
+    <div><h3>Durden Roof Care</h3><p>Full-Service Roofing Contractor Serving All of Mississippi.</p></div>
+    <div><h4>Contact</h4><p>(228) 229-4704<br>durdenroofcare@gmail.com<br>340 Caillavet Street, Biloxi, MS 39530</p></div>
+    <div><h4>Explore</h4><p><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="services.html">Services</a> · <a href="contact.html">Contact</a></p></div>
+  </div>
+  <div class="copy">© <span id="year"></span> Durden Roof Care LLC. All rights reserved.</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
