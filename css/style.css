@@ -167,3 +167,7 @@ p{margin:0 0 1em}
 .foot{grid-template-columns:1fr 1fr 1fr auto}
 .foot > div:last-child{grid-column:auto}
 .foot .footer-logo-wrap{order:4;text-align:right}
+
+/* Footer logo right alignment fix */
+.foot > div:first-child{order:4;text-align:right}
+.foot .footer-logo{margin-left:auto;margin-right:0}
