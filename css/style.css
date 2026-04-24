@@ -196,3 +196,29 @@ p{margin:0 0 1em}
 .step-body p{margin:0 0 .25em 0 !important}
 body{background:url("../assets/hero-drone.jpg") center/cover no-repeat fixed,#1F2937 !important}
 .hero{background:transparent !important}
+
+/* ============================================
+   v9 - Real images: Transparent Logo.png + drone JPG
+   ============================================ */
+/* Use real drone JPG as body background */
+body{background:url("../assets/dji_fly_20250417_154622_0004_1744923141992_photo%201.jpg") center/cover no-repeat fixed,#1F2937 !important}
+
+/* Show real PNG logo via CSS background, hide broken img */
+.logo-img{
+  background:url("../assets/Transparent%20Logo.png") left center/contain no-repeat !important;
+  width:240px !important;
+  height:64px !important;
+  text-indent:-9999px !important;
+  overflow:hidden !important;
+}
+@media(max-width:900px){
+  .logo-img{width:200px !important;height:52px !important}
+}
+.footer-logo{
+  background:url("../assets/Transparent%20Logo.png") left center/contain no-repeat !important;
+  width:200px !important;
+  height:52px !important;
+  filter:brightness(0) invert(1) !important;
+  text-indent:-9999px !important;
+  overflow:hidden !important;
+}
