@@ -222,3 +222,25 @@ body{background:url("../assets/dji_fly_20250417_154622_0004_1744923141992_photo%
   text-indent:-9999px !important;
   overflow:hidden !important;
 }
+
+
+/* ==========================================
+   v10 - Homepage fixes April 2026
+   - Double footer logo size
+   - Stack Our Process cards (h3 above description)
+   - Make blue process headers bigger
+   - Red CTA line break helper
+   ========================================== */
+.footer-logo{width:400px !important;height:104px !important}
+@media(max-width:600px){.footer-logo{width:300px !important;height:78px !important}}
+
+/* Our Process - stack step-num, h3, and description vertically; bigger blue headers */
+.section .grid-3 .card{display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center !important;gap:10px !important;padding:28px 22px !important}
+.section .grid-3 .card .step-num{margin:0 auto 8px auto !important;width:56px !important;height:56px !important;font-size:1.25rem !important;display:flex !important;align-items:center !important;justify-content:center !important}
+.section .grid-3 .card h3{font-size:1.75rem !important;color:var(--blue) !important;margin:0 0 10px 0 !important;line-height:1.2 !important;order:2}
+.section .grid-3 .card p{font-size:1.02rem !important;color:var(--dark) !important;margin:0 !important;order:3}
+.section .grid-3 .card .step-num{order:1}
+
+/* Red CTA - make phone + request line break nicely */
+.red-cta p{max-width:720px;margin:0 auto}
+.red-cta p br{display:block}
