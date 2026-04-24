@@ -250,3 +250,15 @@ body{background:url("../assets/dji_fly_20250417_154622_0004_1744923141992_photo%
 .red-cta p{color:#fff !important}
 .red-cta p a{color:#fff !important;font-weight:800 !important;text-decoration:none !important}
 .red-cta p a:hover{color:#fff !important;opacity:.9}
+
+
+/* v12 - Use new transparent logo (no bottom words) for footer, remove white filter since logo already suits dark bg */
+.footer-logo{
+  background:url("../assets/Transparent%20Logo%20without%20bottom%20words.png") left center/contain no-repeat !important;
+  filter:none !important;
+  width:400px !important;
+  height:200px !important;
+  text-indent:-9999px !important;
+  overflow:hidden !important;
+}
+@media(max-width:600px){.footer-logo{width:300px !important;height:150px !important}}
