@@ -244,3 +244,9 @@ body{background:url("../assets/dji_fly_20250417_154622_0004_1744923141992_photo%
 /* Red CTA - make phone + request line break nicely */
 .red-cta p{max-width:720px;margin:0 auto}
 .red-cta p br{display:block}
+
+
+/* v11 - Red CTA line all white, only phone bold */
+.red-cta p{color:#fff !important}
+.red-cta p a{color:#fff !important;font-weight:800 !important;text-decoration:none !important}
+.red-cta p a:hover{color:#fff !important;opacity:.9}
