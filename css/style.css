@@ -262,3 +262,18 @@ body{background:url("../assets/dji_fly_20250417_154622_0004_1744923141992_photo%
   overflow:hidden !important;
 }
 @media(max-width:600px){.footer-logo{width:300px !important;height:150px !important}}
+
+
+/* ========== v13 - Footer alignment + CTA fixes ========== */
+.foot{align-items:start !important}
+.foot > div:first-child{align-self:start !important;margin-top:0 !important;padding-top:0 !important}
+.footer-logo{width:300px !important;height:78px !important;margin:0 0 12px 0 !important;background-position:left top !important}
+@media(max-width:600px){.footer-logo{width:220px !important;height:57px !important}}
+.foot h3, .foot p{margin-top:0 !important}
+
+/* Red CTA button text -> blue */
+.red-cta .btn, .red-cta .btn:link, .red-cta .btn:visited, .red-cta a.btn{color:var(--blue) !important;background:var(--white) !important}
+
+/* Red CTA contact line - unified font size */
+.red-cta p, .red-cta p a, .red-cta p span{font-size:1.05rem !important;line-height:1.6 !important}
+.red-cta p a{font-weight:800 !important}
