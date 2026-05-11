@@ -349,3 +349,26 @@ section.red-cta .cta-line a strong{
     white-space:normal !important;
   }
 }
+
+
+/* v16 - center the CTA line */
+.red-cta .cta-line,
+section.red-cta .cta-line{
+  text-align:center !important;
+  display:block !important;
+  width:100% !important;
+  font-size:1.5rem !important;
+}
+.red-cta .cta-line span,
+.red-cta .cta-line a,
+.red-cta .cta-line a strong{
+  font-size:1.5rem !important;
+}
+@media(max-width:720px){
+  .red-cta .cta-line,
+  .red-cta .cta-line span,
+  .red-cta .cta-line a,
+  .red-cta .cta-line a strong{
+    font-size:1.05rem !important;
+  }
+}
