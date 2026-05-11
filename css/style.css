@@ -310,3 +310,42 @@ section.red-cta p span{
 .red-cta p a:not(.btn){
   font-weight:800 !important;
 }
+
+
+/* ========== v15 - CTA contact one-line, bigger, bold phone ========== */
+.red-cta .cta-line,
+section.red-cta .cta-line{
+  font-size:1.45rem !important;
+  line-height:1.5 !important;
+  white-space:nowrap !important;
+  font-weight:500 !important;
+  margin:8px 0 18px !important;
+  color:#fff !important;
+}
+.red-cta .cta-line span,
+section.red-cta .cta-line span{
+  font-size:1.45rem !important;
+  font-weight:500 !important;
+  color:#fff !important;
+}
+.red-cta .cta-line a,
+section.red-cta .cta-line a{
+  font-size:1.45rem !important;
+  color:#fff !important;
+  text-decoration:none !important;
+}
+.red-cta .cta-line a strong,
+section.red-cta .cta-line a strong{
+  font-weight:900 !important;
+  font-size:1.45rem !important;
+  color:#fff !important;
+}
+@media(max-width:720px){
+  .red-cta .cta-line,
+  .red-cta .cta-line span,
+  .red-cta .cta-line a,
+  .red-cta .cta-line a strong{
+    font-size:1.05rem !important;
+    white-space:normal !important;
+  }
+}
