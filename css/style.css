@@ -277,3 +277,36 @@ body{background:url("../assets/dji_fly_20250417_154622_0004_1744923141992_photo%
 /* Red CTA contact line - unified font size */
 .red-cta p, .red-cta p a, .red-cta p span{font-size:1.05rem !important;line-height:1.6 !important}
 .red-cta p a{font-weight:800 !important}
+
+
+/* ========== v14 - Stronger CTA overrides ========== */
+/* Button text MUST be blue (override .red-cta p a:#fff rule from v11) */
+.red-cta p a.btn,
+.red-cta a.btn,
+section.red-cta p a.btn,
+section.red-cta a.btn{
+  color:var(--blue) !important;
+  background:var(--white) !important;
+  font-weight:800 !important;
+  opacity:1 !important;
+}
+.red-cta p a.btn:hover,
+section.red-cta a.btn:hover{
+  color:var(--blue-dark) !important;
+  background:var(--white) !important;
+  opacity:1 !important;
+}
+
+/* Unify font sizes in the contact line - phone, 'Call', and 'or request...' all same size */
+.red-cta p,
+.red-cta p *,
+section.red-cta p,
+section.red-cta p a:not(.btn),
+section.red-cta p span{
+  font-size:1.15rem !important;
+  line-height:1.6 !important;
+  font-weight:500 !important;
+}
+.red-cta p a:not(.btn){
+  font-weight:800 !important;
+}
