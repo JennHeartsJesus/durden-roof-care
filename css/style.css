@@ -372,3 +372,27 @@ section.red-cta .cta-line{
     font-size:1.05rem !important;
   }
 }
+
+
+/* v17 - ensure CTA line is truly centered */
+.red-cta,
+section.red-cta,
+.red-cta .container,
+section.red-cta .container{
+  text-align:center !important;
+}
+.red-cta .cta-line,
+section.red-cta .cta-line{
+  white-space:normal !important;
+  text-align:center !important;
+  max-width:900px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  font-size:1.35rem !important;
+}
+.red-cta .cta-line span,
+.red-cta .cta-line a,
+.red-cta .cta-line a strong{
+  font-size:1.35rem !important;
+  white-space:nowrap !important;
+}
