@@ -371,8 +371,8 @@ section.red-cta .cta-line{
   .red-cta .cta-line a strong{
     font-size:1.05rem !important;
   }
-}
-
+/* v18 - hide stray red footer divider */
+.footer-divider{display:none !important}
 
 /* v17 - ensure CTA line is truly centered */
 .red-cta,
@@ -396,3 +396,7 @@ section.red-cta .cta-line{
   font-size:1.35rem !important;
   white-space:nowrap !important;
 }
+
+
+/* v18 - hide stray red footer divider */
+.footer-divider{display:none !important}
