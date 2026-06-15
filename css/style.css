@@ -438,3 +438,13 @@ section.red-cta .cta-line{
     gap:20px;
   }
 }
+
+/* v20 - force CTA line centering via flexbox (text-align fallback) */
+.red-cta .cta-line, section.red-cta .cta-line{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:baseline !important;
+  gap:.35ch !important;
+  text-align:center !important;
+}
