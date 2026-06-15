@@ -400,3 +400,41 @@ section.red-cta .cta-line{
 
 /* v18 - hide stray red footer divider */
 .footer-divider{display:none !important}
+
+
+/* v11 - Materials page two-card warranties layout */
+.warranty-cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:start;
+  margin-top:24px;
+}
+.warranty-card{
+  background:#fff;
+  border:1px solid var(--gray-light);
+  border-radius:var(--radius);
+  padding:26px;
+  transition:box-shadow .2s,transform .2s;
+}
+.warranty-card:hover{
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  transform:translateY(-2px);
+}
+.warranty-card h3{
+  color:var(--blue);
+  margin-top:0;
+}
+.warranty-card ul{
+  margin:0 0 1em;
+  padding-left:1.2em;
+}
+.warranty-card li{
+  margin-bottom:.4em;
+}
+@media(max-width:720px){
+  .warranty-cards{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+}
