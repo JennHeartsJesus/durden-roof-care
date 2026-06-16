@@ -448,3 +448,48 @@ section.red-cta .cta-line{
   gap:.35ch !important;
   text-align:center !important;
 }
+
+
+/* v7 - Eight-person team grid */
+.team-grid-eight {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2rem;
+margin-top: 2rem;
+}
+.team-card {
+background: #ffffff;
+border: 1px solid rgba(0, 0, 0, 0.08);
+border-radius: 16px;
+padding: 1.5rem;
+text-align: center;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+.team-photo {
+width: 140px;
+height: 140px;
+object-fit: cover;
+border-radius: 50%;
+display: block;
+margin: 0 auto 1rem auto;
+}
+.team-role {
+font-weight: 700;
+color: #666;
+margin-bottom: 0.75rem;
+}
+.section-intro {
+text-align: center;
+max-width: 700px;
+margin: 0 auto;
+}
+@media (max-width: 1100px) {
+.team-grid-eight {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 640px) {
+.team-grid-eight {
+grid-template-columns: 1fr;
+}
+}
