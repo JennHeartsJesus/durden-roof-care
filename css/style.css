@@ -505,6 +505,7 @@ display: block;
 margin: 0 auto 1rem auto;
 }
 
+}
 /* ========== v21 - FORCE team grid + uniform photos (fix swallowed rules from unclosed v16 media query) ========== */
 .team-grid-eight,
 section .container .team-grid-eight {
