@@ -536,3 +536,109 @@ section .container .team-grid-eight {
 @media (max-width: 640px) {
   .team-grid-eight { grid-template-columns: 1fr !important; }
 }
+
+/* v22 - Mobile hamburger navigation + gentler reviews widget */
+.nav-toggle{
+  display:none;
+  width:44px;
+  height:44px;
+  border:2px solid var(--blue);
+  border-radius:8px;
+  background:#fff;
+  color:var(--blue);
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+  padding:0;
+  cursor:pointer;
+  flex-shrink:0;
+}
+.nav-toggle span{
+  display:block;
+  width:22px;
+  height:2px;
+  background:currentColor;
+  border-radius:2px;
+}
+.nav-toggle:hover,
+.nav-toggle:focus-visible{
+  background:var(--blue);
+  color:#fff;
+}
+.nav-toggle:focus-visible{
+  outline:3px solid rgba(43,87,165,.25);
+  outline-offset:2px;
+}
+[class*="elfsight-app-"]{
+  display:block;
+  max-width:960px;
+  max-height:420px;
+  margin:0 auto;
+  overflow:auto;
+  border-radius:var(--radius);
+  background:#fff;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+}
+[class*="elfsight-app-"]:empty{
+  min-height:180px;
+  box-shadow:none;
+}
+@media(max-width:900px){
+  .nav{
+    position:relative;
+    justify-content:space-between;
+    gap:10px;
+  }
+  .nav-toggle{
+    display:flex !important;
+    order:2;
+  }
+  .main-nav{
+    position:absolute;
+    left:16px;
+    right:16px;
+    top:calc(100% + 8px);
+    display:none !important;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0 !important;
+    padding:10px;
+    background:#fff;
+    border:1px solid var(--gray-light);
+    border-radius:8px;
+    box-shadow:0 12px 28px rgba(0,0,0,.16);
+    z-index:100;
+  }
+  .main-nav.is-open{
+    display:flex !important;
+  }
+  .main-nav a{
+    display:block;
+    padding:12px 14px;
+    border-radius:6px;
+    font-size:.98rem !important;
+  }
+  .main-nav a:hover,
+  .main-nav a.active{
+    background:rgba(43,87,165,.08);
+  }
+  .nav-right{
+    display:none !important;
+  }
+}
+@media(max-width:600px){
+  .nav{
+    padding:8px 16px !important;
+  }
+  .logo-img{
+    width:185px !important;
+    height:48px !important;
+  }
+  [class*="elfsight-app-"]{
+    max-height:320px;
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
