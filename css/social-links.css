@@ -92,4 +92,52 @@
   }
   .drc-mobile-phone:hover { color: #1e3f7a; background: #f5f7fa; }
   .drc-mobile-phone:focus-visible { outline: 2px solid #2b57a5; outline-offset: 3px; }
+  .site-header .nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto 44px;
+    align-items: center;
+    gap: 8px;
+  }
+  .site-header .nav > a:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    margin: 0 !important;
+    justify-self: start;
+  }
+  .site-header .nav .logo-img {
+    width: 100% !important;
+    max-width: 200px;
+    height: 48px !important;
+  }
+  .site-header .nav .drc-mobile-phone {
+    grid-column: 2;
+    grid-row: 1;
+    order: 1;
+    max-width: none;
+    margin: 0;
+    padding: 8px 10px;
+    gap: 5px;
+    font-size: 14px;
+  }
+  .site-header .nav .drc-mobile-phone svg {
+    width: 14px;
+    height: 14px;
+    flex-basis: 14px;
+  }
+  .site-header .nav .nav-toggle {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+  }
+}
+@media (max-width: 600px) {
+  .site-header .nav {
+    padding: 8px 12px !important;
+    gap: 6px;
+  }
+  .site-header .nav .logo-img {
+    max-width: 150px;
+    height: 44px !important;
+  }
 }
