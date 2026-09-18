@@ -58,3 +58,38 @@
     justify-self: center;
   }
 }
+.drc-mobile-phone {
+  display: none;
+}
+@media (max-width: 900px) {
+  .drc-mobile-phone {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: max-content;
+    max-width: calc(100% - 32px);
+    min-height: 44px;
+    margin: 0 auto 12px;
+    padding: 8px 24px;
+    border: 2px solid #2b57a5;
+    border-radius: 999px;
+    background: #fff;
+    color: #2b57a5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .drc-mobile-phone svg {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 17px;
+    fill: currentColor;
+  }
+  .drc-mobile-phone:hover { color: #1e3f7a; background: #f5f7fa; }
+  .drc-mobile-phone:focus-visible { outline: 2px solid #2b57a5; outline-offset: 3px; }
+}
