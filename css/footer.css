@@ -22,6 +22,7 @@
 .drc-footer-links a { display: block; }
 .drc-footer a { color: rgba(255,255,255,.75); text-decoration: none; }
 .drc-footer a:hover { color: #fff; text-decoration: underline; }
+.drc-footer a.drc-directions { text-decoration: underline; text-underline-offset: 3px; }
 .drc-footer a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 .drc-footer-contact p { margin: 0; overflow-wrap: anywhere; }
 .drc-footer-copy {
