@@ -46,3 +46,15 @@
 @media (max-width: 600px) {
   .drc-social-nav { padding: 0 16px; gap: 16px; }
 }
+@media (max-width: 520px) {
+  .drc-social-nav {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    gap: 0 16px;
+  }
+  .drc-social-nav .drc-google-reviews {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
