@@ -87,7 +87,7 @@ function handleQuote(e){
   // For now, open an email to durdenroofcare@gmail.com with the details.
   var body = '';
   data.forEach(function(v,k){ body += k + ': ' + v + '\n'; });
-  var subject = encodeURIComponent('Free Quote Request - ' + first);
+  var subject = encodeURIComponent('Complimentary Quote Request - ' + first);
   window.location.href = 'mailto:durdenroofcare@gmail.com?subject=' + subject + '&body=' + encodeURIComponent(body);
   return false;
 }

@@ -642,3 +642,12 @@ section .container .team-grid-eight {
   }
 }
 
+/* Keep longer complimentary-quote labels inside narrow phone screens. */
+@media (max-width:400px) {
+  .section.red-cta .btn {
+    max-width:100%;
+    padding:14px 20px;
+    font-size:1.1rem;
+    white-space:normal;
+  }
+}
