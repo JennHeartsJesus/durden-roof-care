@@ -43,3 +43,6 @@
   .drc-footer-inner { padding: 0 16px; }
   .drc-footer-grid { column-gap: 16px; }
 }
+.drc-footer .drc-footer-referral { margin: 0 0 32px; padding: 0 0 24px; border-bottom: 1px solid rgba(255,255,255,.2); text-align: center; }
+.drc-footer .drc-footer-referral a { color: #fff; font-weight: 700; font-size: 1.1rem; text-decoration: underline; text-underline-offset: 3px; }
+.drc-footer .drc-footer-referral span { display: block; color: rgba(255,255,255,.8); font-size: .875rem; font-weight: 400; }

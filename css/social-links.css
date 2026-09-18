@@ -130,6 +130,12 @@
     grid-row: 1;
     justify-self: end;
   }
+  .site-header .main-nav {
+    max-height: calc(100vh - 180px);
+    max-height: calc(100dvh - 180px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
 }
 @media (max-width: 600px) {
   .site-header .nav {
