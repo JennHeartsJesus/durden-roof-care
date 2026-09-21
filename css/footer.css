@@ -33,6 +33,7 @@
   font-size: .82rem;
   color: rgba(255,255,255,.6);
 }
+.drc-footer-copy .drc-portal-link { display: inline-block; margin-left: 16px; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 900px) {
   .drc-footer-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .drc-footer-brand { grid-column: 1 / -1; text-align: center; }
