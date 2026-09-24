@@ -17,7 +17,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 html,body{margin:0;padding:0}
-body{font-family:var(--sans);color:var(--dark);background:url("../assets/hero-drone.jpg") center/cover no-repeat fixed;line-height:1.7;font-size:16px}
+body{font-family:var(--sans);color:var(--dark);background:url("../assets/roof-aerial.webp") center/cover no-repeat fixed;line-height:1.7;font-size:16px}
 img{max-width:100%;display:block}
 a{color:var(--blue);text-decoration:none}
 a:hover{color:var(--red)}
@@ -194,14 +194,14 @@ p{margin:0 0 1em}
 .step-body{flex:1 !important;min-width:0 !important}
 .step-body h3{font-size:1.45rem !important;color:var(--blue) !important;margin:0 0 8px 0 !important;line-height:1.25 !important}
 .step-body p{margin:0 0 .25em 0 !important}
-body{background:url("../assets/hero-drone.jpg") center/cover no-repeat fixed,#1F2937 !important}
+body{background:url("../assets/roof-aerial.webp") center/cover no-repeat fixed,#1F2937 !important}
 .hero{background:transparent !important}
 
 /* ============================================
    v9 - Real images: Transparent Logo.png + drone JPG
    ============================================ */
 /* Use real drone JPG as body background */
-body{background:url("../assets/dji_fly_20250417_154622_0004_1744923141992_photo%201.jpg") center/cover no-repeat fixed,#1F2937 !important}
+body{background:url("../assets/roof-aerial.webp") center/cover no-repeat fixed,#1F2937 !important}
 
 /* Show real PNG logo via CSS background, hide broken img */
 .logo-img{
@@ -649,5 +649,17 @@ section .container .team-grid-eight {
     padding:14px 20px;
     font-size:1.1rem;
     white-space:normal;
+  }
+}
+
+/* Callout paragraphs must wrap on phones, including wider mobile screens. */
+@media (max-width:768px) {
+  .red-cta p,
+  section.red-cta p,
+  .red-cta p *,
+  section.red-cta p * {
+    max-width:100%;
+    white-space:normal !important;
+    overflow-wrap:anywhere;
   }
 }
