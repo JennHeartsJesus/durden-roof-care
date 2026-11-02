@@ -92,3 +92,7 @@
 .mobile-location .location-reading a:not(.btn):not(.location-text-link){color:var(--blue);text-decoration:underline}
 .sa-legend i.sa-leg-office{width:17px;height:17px;box-shadow:0 0 0 2px #fff,0 0 0 3px var(--red)}
 .sa-hq .sa-dot{stroke:var(--red);stroke-width:2;fill:var(--red);paint-order:stroke}
+.location-office{border:1px solid var(--gray-light);border-left:4px solid var(--red);border-radius:var(--radius);padding:28px 32px;background:var(--white)}
+.location-office h2{margin-top:0}
+.location-office-address{font-size:1.1rem;line-height:1.6}
+.location-office .location-actions{justify-content:flex-start}
