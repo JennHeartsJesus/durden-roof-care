@@ -87,3 +87,6 @@
 @media (max-width:900px){.sa-towns{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:520px){.sa-towns{grid-template-columns:1fr}}
 .sa-note a[href^="tel"]{white-space:nowrap}
+.sa-towns a{color:var(--dark);text-decoration:underline;text-decoration-color:#b8c4d8;text-underline-offset:3px}
+.sa-towns a:hover{color:var(--red)}
+.mobile-location .location-reading a:not(.btn):not(.location-text-link){color:var(--blue);text-decoration:underline}
