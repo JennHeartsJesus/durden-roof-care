@@ -1,0 +1,38 @@
+/* Local service pages reuse Durden's existing red, white and blue design. */
+.mobile-location{background:var(--white)}
+.mobile-location .section{padding-block:64px}
+.mobile-location .section.alt{background:var(--light)}
+.location-breadcrumb{font-size:.875rem;margin-bottom:24px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.location-breadcrumb a{color:var(--white);text-decoration:underline;text-underline-offset:4px}
+.location-actions{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px}
+.location-actions .btn{white-space:normal;text-align:center}
+.mobile-location .page-hero .btn-outline-white{background:var(--white);color:var(--blue-dark)}
+.mobile-location .page-hero .btn-outline-white:hover{background:var(--light);color:var(--blue-dark)}
+.location-split{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start}
+.location-reading{max-width:900px}
+.location-estimate{padding:32px;background:var(--light);border-top:4px solid var(--blue);border-radius:var(--radius)}
+.location-estimate h2{font-size:1.5rem}
+.location-estimate a,.location-text-link{font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.location-service-columns{grid-template-columns:1fr 1fr}
+.location-service-columns article+article{border-left:1px solid var(--gray-light);padding-left:48px}
+.location-faq{margin-top:24px;border-top:1px solid var(--gray-light)}
+.location-faq details{border-bottom:1px solid var(--gray-light)}
+.location-faq summary{padding:20px 0;cursor:pointer;font-weight:600;color:var(--blue-dark)}
+.location-faq p{margin:0;padding:0 0 24px}
+.location-faq summary:focus-visible,.location-text-link:focus-visible,.area-link:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+.areas-section{background:var(--light)}
+.area-link{display:block;max-width:720px;margin:32px auto 0;padding:32px;background:var(--white);border:1px solid var(--gray-light);border-left:4px solid var(--blue);border-radius:var(--radius);text-align:left}
+.area-link h3{font-size:1.5rem;margin-bottom:12px}
+.area-link p{color:var(--dark);margin:0 0 16px}
+.area-link span{font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.area-link:hover{border-left-color:var(--red)}
+#residential-roofing,#commercial-roofing,#roof-repairs,#areas-we-serve{scroll-margin-top:200px}
+@media(max-width:767px){
+ .mobile-location .section{padding-block:40px}
+ .location-split{grid-template-columns:1fr;gap:32px}
+ .location-service-columns article+article{border-left:0;border-top:1px solid var(--gray-light);padding-left:0;padding-top:32px}
+ .location-estimate,.area-link{padding:24px}
+ .location-actions{gap:12px}
+ .location-actions .btn{width:100%}
+ .location-breadcrumb{font-size:.8125rem}
+}
