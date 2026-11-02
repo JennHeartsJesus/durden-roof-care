@@ -90,3 +90,5 @@
 .sa-towns a{color:var(--dark);text-decoration:underline;text-decoration-color:#b8c4d8;text-underline-offset:3px}
 .sa-towns a:hover{color:var(--red)}
 .mobile-location .location-reading a:not(.btn):not(.location-text-link){color:var(--blue);text-decoration:underline}
+.sa-legend i.sa-leg-office{width:17px;height:17px;box-shadow:0 0 0 2px #fff,0 0 0 3px var(--red)}
+.sa-hq .sa-dot{stroke:var(--red);stroke-width:2;fill:var(--red);paint-order:stroke}
