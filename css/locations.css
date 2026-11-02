@@ -71,11 +71,19 @@
 .sa-coast-title{font-size:1.4rem;margin:6px 6px 12px;color:var(--blue)}
 .sa-county-label{font:700 13px var(--sans);letter-spacing:.14em;fill:#fff;fill-opacity:.75;pointer-events:none}
 .sa-county-lines-inset{stroke:#ffffff;stroke-opacity:.55;stroke-width:1}
-.sa-cities-inset text{font-size:15px}
+.sa-cities-inset text{font-size:14px}
 .sa-zoom rect{fill:none;stroke:var(--red);stroke-width:1.6;stroke-dasharray:5 4}
 .sa-zoom text{font:600 14px var(--sans);fill:var(--red);paint-order:stroke;stroke:#e8f0fb;stroke-width:4px}
 .sa-zoom:hover rect{stroke-width:2.5}
 @media (max-width:600px){.sa-county-label{font-size:12px}.sa-zoom text{font-size:20px}}
 .sa-swipe{display:none}
-@media (max-width:760px){.sa-coast-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:6px}.sa-coast-scroll .sa-inset-svg{width:820px;max-width:none}.sa-swipe{display:block;text-align:center;font-size:.85rem;color:var(--gray);margin:8px 0 0}}
+@media (max-width:760px){.sa-coast-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:6px}.sa-coast-scroll .sa-inset-svg{width:960px;max-width:none}.sa-swipe{display:block;text-align:center;font-size:.85rem;color:var(--gray);margin:8px 0 0}}
 .sa-legend i{flex-shrink:0}
+.sa-note{max-width:760px;margin:14px auto 4px;padding:14px 18px;background:var(--light);border-left:4px solid var(--red);border-radius:6px;text-align:center;color:var(--dark)}
+.sa-note a{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.sa-towns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 24px;margin:20px 6px 6px}
+.sa-towns h4{font-size:.95rem;color:var(--blue);margin:0 0 4px}
+.sa-towns p{font-size:.88rem;color:var(--dark);margin:0;line-height:1.5}
+@media (max-width:900px){.sa-towns{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.sa-towns{grid-template-columns:1fr}}
+.sa-note a[href^="tel"]{white-space:nowrap}
