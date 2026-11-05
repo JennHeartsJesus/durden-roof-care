@@ -45,13 +45,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="section"><div class="container contact-grid"><div><h2>We'd Love To Hear From You</h2><p>Whether you need a minor repair, a full roof replacement, or emergency storm response, we're here to help. Call, email, or send us a message and we'll get back to you quickly.</p><ul class="contact-list"><li><strong>Phone:</strong> <a href="tel:+12282294704">(228) 229-4704</a></li><li><strong>Email:</strong> <a href="mailto:durdenroofcare@gmail.com">durdenroofcare@gmail.com</a></li><li><strong>Biloxi Home Office:</strong> 340 Caillavet Street, Biloxi, MS 39530</li><li><strong>Mobile Office:</strong> 3100 Cottage Hill Road, Building 5, Mobile, AL 36606 <em>(by appointment only)</em></li><li><strong>Hours:</strong><table style="margin-top:0.25rem;border-collapse:collapse"><tr><td style="padding-right:1.25rem">Sunday</td><td>Closed</td></tr><tr><td style="padding-right:1.25rem">Monday</td><td>9 AM - 4 PM</td></tr><tr><td style="padding-right:1.25rem">Tuesday</td><td>9 AM - 4 PM</td></tr><tr><td style="padding-right:1.25rem">Wednesday</td><td>9 AM - 4 PM</td></tr><tr><td style="padding-right:1.25rem">Thursday</td><td>9 AM - 4 PM</td></tr><tr><td style="padding-right:1.25rem">Friday</td><td>9 AM - 1 PM</td></tr><tr><td style="padding-right:1.25rem">Saturday</td><td>Closed</td></tr></table><em>*By appointment only*</em></li><li><strong>Service Area:</strong> Mississippi & Alabama</li></ul><p><strong>Licensed &amp; Insured</strong> &mdash; Complimentary estimates &mdash; Insurance claims welcome.</p></div><div>
 <form id="quote-form" class="quote-form">
-  <label>Name<input type="text" name="name" required></label>
-  <label>Phone<input type="tel" name="phone" required></label>
-  <label>Email<input type="email" name="email" required></label>
-  <label>Address<input type="text" name="address"></label>
-  <label>City<input type="text" name="city"></label>
-  <label>State<input type="text" name="state"></label>
-  <label>ZIP<input type="text" name="zip"></label>
+  <label>Name<input type="text" name="name" maxlength="120" autocomplete="name" required></label>
+  <label>Phone<input type="tel" name="phone" maxlength="40" autocomplete="tel" required></label>
+  <label>Email<input type="email" name="email" maxlength="254" autocomplete="email" required></label>
+  <label>Address<input type="text" name="address" maxlength="240" autocomplete="street-address"></label>
+  <label>City<input type="text" name="city" maxlength="100" autocomplete="address-level2"></label>
+  <label>State<input type="text" name="state" maxlength="50" autocomplete="address-level1"></label>
+  <label>ZIP<input type="text" name="zip" maxlength="20" autocomplete="postal-code"></label>
   <label>Service Needed
     <select name="service">
       <option>Roof Replacement</option>
@@ -62,9 +62,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <option>Other</option>
     </select>
   </label>
-  <label>Message<textarea name="message" rows="4"></textarea></label>
+  <label>Message<textarea name="message" rows="4" maxlength="4000"></textarea></label>
+  <div aria-hidden="true" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)"><label>Leave this field blank<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
   <button type="submit" class="btn btn-large">Request Complimentary Quote</button>
-  <p id="form-status" role="status" aria-live="polite" aria-atomic="true" style="margin-top:1rem;font-weight:600"></p>
+  <p id="form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" style="margin-top:1rem;font-weight:600"></p>
+  <noscript><p>This form requires JavaScript. Please call <a href="tel:+12282294704">(228) 229-4704</a> or email <a href="mailto:durdenroofcare@gmail.com">durdenroofcare@gmail.com</a> to request a quote.</p></noscript>
 </form>
 </div></div></section>
 
@@ -106,5 +108,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 <script src="js/main.js?v=complimentary-1"></script>
-<script src="js/quote.js?v=20261022-1" defer></script>
+<script src="js/quote.js?v=20261105-1" defer></script>
 </body></html>
