@@ -45,7 +45,8 @@
   .drc-footer-grid { column-gap: 16px; }
 }
 .drc-footer .drc-footer-referral { margin: 0 0 32px; padding: 0 0 24px; border-bottom: 1px solid rgba(255,255,255,.2); text-align: center; }
-.drc-footer .drc-footer-referral a { color: #fff; font-weight: 700; font-size: 1.1rem; text-decoration: underline; text-underline-offset: 3px; }
+.drc-footer .drc-footer-referral a { display: block; width: min(100%,620px); margin: 0 auto; color: #fff; border-radius: 12px; }
+.drc-footer .drc-referral-badge { display: block; width: 100%; max-width: 100%; height: auto; }
 .drc-footer .drc-footer-referral span { display: block; color: rgba(255,255,255,.8); font-size: .875rem; font-weight: 400; }
 
 .drc-footer .drc-office-label{display:inline-block;margin-top:10px;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.75}
