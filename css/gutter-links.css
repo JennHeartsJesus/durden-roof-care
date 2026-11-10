@@ -2,7 +2,7 @@
 a.gutter-service-link{display:block;color:var(--dark);border:2px solid var(--blue);transition:border-color .2s,box-shadow .2s,transform .2s}
 a.gutter-service-link h3{text-decoration:underline;text-underline-offset:5px}
 a.gutter-service-link p{color:var(--dark)}
-.gutter-service-link .gutter-card-cta{display:inline-block;margin-top:10px;border-radius:999px;background:var(--red);color:#fff;padding:10px 18px;font-size:.86rem;font-weight:700}
+.gutter-service-link .gutter-card-cta{display:inline-block;order:4;align-self:center;margin-top:10px;border-radius:999px;background:var(--red);color:#fff;padding:10px 18px;font-size:.86rem;font-weight:700}
 a.gutter-service-link:hover{border-color:var(--red);box-shadow:0 8px 20px #1e3f7a1a;transform:translateY(-3px)}
 a.gutter-service-link:focus-visible{outline:3px solid var(--red);outline-offset:4px}
 @media(prefers-reduced-motion:reduce){a.gutter-service-link{transition:none;transform:none!important}}
